@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\JCW_Git\Baekjoon\CodingTestPractice\main.cpp(26,20): warning C4018: '<': signed/unsigned mismatch
+  CodingTestPractice.vcxproj -> D:\JCW_Git\Baekjoon\CodingTestPractice\Debug\CodingTestPractice.exe
