@@ -13,10 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Programmers">
+      <UniqueIdentifier>{6a042a75-7137-4384-9733-4514e8673354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Weekdays">
+      <UniqueIdentifier>{3a58c5e1-7905-451e-bfcb-c63ebfc6ecbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Level2_올바른괄호.cpp">
+      <Filter>Source Files\Programmers</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

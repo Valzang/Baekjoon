@@ -1,49 +1,201 @@
 #include <iostream>
-#include <string>
+#include <map>
+
+#include <crtdbg.h>
 
 using namespace std;
 
-/*
-괄호가 바르게 짝지어졌다는 것은 '(' 문자로 열렸으면 반드시 짝지어서 ')' 문자로 닫혀야 한다는 뜻입니다. 예를 들어
 
-"()()" 또는 "(())()" 는 올바른 괄호입니다.
-")()(" 또는 "(()(" 는 올바르지 않은 괄호입니다.
-'(' 또는 ')' 로만 이루어진 문자열 s가 주어졌을 때, 문자열 s가 올바른 괄호이면 true를 return 하고, 
-올바르지 않은 괄호이면 false를 return 하는 solution 함수를 완성해 주세요.
-*/
 
-bool solution(string s)
+struct tree
 {
-	bool answer = true;
+	int x;
+	tree* l;
+	tree* r;
 
-	int openCount = 1;
-	int closeCount = 0;
-	// [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-
-	if (s[0] == ')')
-		return false;
-
-	for (int i = 1; i < s.size(); ++i)
+	tree(int a, tree* _left = nullptr, tree* _right = nullptr)
 	{
-		if (s[i] == '(')
-			++openCount;
-		else
-		{
-			++closeCount;
-			if (closeCount > openCount)
-				return false;
-		}
+		x = a;
+		l = _left;
+		r = _right;
 	}
+};
 
-	return closeCount == openCount;
+
+int DownTree(tree* T, map<int, int> subTreeMap)
+{
+	int count = subTreeMap.size();
+	map<int, int> leftMap = subTreeMap;
+	map<int, int> rightMap = subTreeMap;
+	if (T->l != nullptr)
+	{
+		leftMap.insert(make_pair(T->l->x, 1));
+		int tempCount = DownTree(T->l, leftMap);
+		if (tempCount > count)
+			count = tempCount;
+	}
+	if (T->r != nullptr)
+	{
+		rightMap.insert(make_pair(T->r->x, 1));
+		int tempCount = DownTree(T->r, rightMap);
+		if (tempCount > count)
+			count = tempCount;
+	}	
+	return count;
 }
+
+bool DeleteTree(tree* T)
+{
+	bool result = false;
+	while (T != nullptr)
+	{
+		if (T->l != nullptr)
+		{
+			result = DeleteTree(T->l);
+			if (!result)
+				T->l = nullptr;
+			continue;
+		}
+		if (T->r != nullptr)
+		{
+			result = DeleteTree(T->r);
+			if (!result)
+				T->r = nullptr;
+			continue;
+		}
+		delete T;
+		T = nullptr;
+		return false;
+	}
+	
+	
+}
+
+int solution(tree* T)
+{
+	map<int, int> treeMap;
+	if (T == nullptr)
+		return 0;
+	treeMap.insert(make_pair(T->x, 1));
+	return DownTree(T, treeMap);
+
+}
+
+
+// 구분되는 수는 최대 3임.
+// N은 정수로, 1~50,000
+// 트리의 층은 0~ 3,500
+
+
+
+// int solution(tree *T);
+// T는 N개의 노드를 가짐. 구분되는 수가 가장 큰 경우의 값을 반환함.
+// 시간 & 공간복잡도 최악의 경우가 O(N)
 
 int main()
 {
-	cout << solution("()()");
-	cout << solution("(())()");
-	cout << solution(")()(");
-	cout << solution("(()(");
+	/// res = 3
+	/*
+	tree* t = new tree(4);
+	t->l = new tree(5);
+	t->r = new tree(6);
+
+	t->l->l = new tree(4);
+	t->l->l->l = new tree(5);
+
+	t->r->l = new tree(1);
+	t->r->r = new tree(6);
+	*/
+
+	// res = 4
+	/*
+	tree* t = new tree(4);
+	t->l = new tree(3);
+	t->r = new tree(6);
+
+	t->l->l = new tree(2);
+	t->l->l->l = new tree(1);
+
+	t->r->l = new tree(1);
+	t->r->r = new tree(6);
+	*/
+
+	/// res = 5
+	/*
+	tree* t = new tree(4);
+	t->l = new tree(5);
+	t->l->l = new tree(4);
+	t->l->l->l = new tree(5);
+
+
+	t->r = new tree(6);
+	t->r->l = new tree(1);
+	t->r->l->l = new tree(8);
+	t->r->l->l->l = new tree(10);
+
+	t->r->l->r = new tree(7);
+
+	t->r->r = new tree(6);
+	t->r->r->r = new tree(3);
+	*/
+
+	/// res = 6
+	/*
+	tree* t = new tree(3);
+	t->l = new tree(4);
+	t->l->l = new tree(3);
+	t->l->l->l = new tree(4);
+
+	t->l->r = new tree(1);
+	t->l->r->l = new tree(3);
+	t->l->r->r = new tree(10);
+	t->l->r->r->r = new tree(20);
+	t->l->r->r->r->r = new tree(15);
+
+	t->r = new tree(5);
+	t->r->l = new tree(2);
+
+	t->r->r = new tree(2);
+	t->r->r->r = new tree(20);
+	t->r->r->r->r = new tree(10);
+	*/
+
+	// res = 7
+	tree* t = new tree(3);
+	t->l = new tree(4);
+	t->l->l = new tree(3);
+	t->l->l->l = new tree(4);
+
+	t->l->r = new tree(1);
+	t->l->r->l = new tree(3);
+	t->l->r->r = new tree(10);
+	t->l->r->r->l = new tree(4);
+	t->l->r->r->l->l = new tree(5);
+	t->l->r->r->r = new tree(20);
+	t->l->r->r->r->l = new tree(11);
+	t->l->r->r->r->r = new tree(15);
+
+	t->r = new tree(5);
+	t->r->l = new tree(2);
+
+	t->r->r = new tree(2);
+	t->r->r->r = new tree(20);
+
+	t->r->r->r->l = new tree(10);
+	t->r->r->r->l->l = new tree(12);
+	t->r->r->r->l->r = new tree(13);
+
+	t->r->r->r->r = new tree(11);
+	t->r->r->r->r->l = new tree(14);
+	t->r->r->r->r->l->l = new tree(288);
+	t->r->r->r->r->l->r = new tree(14);
+	t->r->r->r->r->r = new tree(11);
+
+	cout << "최대 개수 : " << solution(t);
+
+	DeleteTree(t);
+
+	_CrtDumpMemoryLeaks();
 
 	return 0;
 }
