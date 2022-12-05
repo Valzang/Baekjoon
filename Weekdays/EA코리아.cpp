@@ -44,30 +44,16 @@ int DownTree(tree* T, map<int, int> subTreeMap)
 	return count;
 }
 
-bool DeleteTree(tree* T)
+void DeleteTree(tree* T)
 {
-	bool result = false;
-	while (T != nullptr)
-	{
-		if (T->l != nullptr)
-		{
-			result = DeleteTree(T->l);
-			if (!result)
-				T->l = nullptr;
-			continue;
-		}
-		if (T->r != nullptr)
-		{
-			result = DeleteTree(T->r);
-			if (!result)
-				T->r = nullptr;
-			continue;
-		}
-		delete T;
-		T = nullptr;
-		return false;
-	}
-	
+	if (T == nullptr)
+		return;
+
+	DeleteTree(T->l);
+	DeleteTree(T->r);
+
+	delete T;
+	T = nullptr;	
 	
 }
 
