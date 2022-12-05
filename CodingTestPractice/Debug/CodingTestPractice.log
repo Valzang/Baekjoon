@@ -1,3 +1,0 @@
-﻿  main.cpp
-D:\JCW_Git\Baekjoon\CodingTestPractice\main.cpp(72): warning C4715: 'DeleteTree': not all control paths return a value
-  CodingTestPractice.vcxproj -> D:\JCW_Git\Baekjoon\CodingTestPractice\Debug\CodingTestPractice.exe
