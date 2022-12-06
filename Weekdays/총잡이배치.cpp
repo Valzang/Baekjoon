@@ -1,11 +1,27 @@
 #include <iostream>
 #include <crtdbg.h>
+#include <ctime>
 
 using namespace std;
 
 
 #define COLUMN 8
 #define ROW 8
+
+class StopWatch
+{
+private:
+	unsigned int startTime;
+	unsigned int endTime;
+public:
+	unsigned int get_startTime() { return startTime; }
+	unsigned int get_endTime() { return endTime; }
+	StopWatch() { startTime = (unsigned int)clock(); endTime = 0; }
+	~StopWatch() {}
+	void start() { startTime = (unsigned int)clock(); }
+	void stop() { endTime = (unsigned int)clock(); }
+	unsigned int getElapsedTime() { return endTime - startTime; }
+};
 
 int maxGunner = 0;
 int maxGunnerCount = 0;
@@ -37,17 +53,17 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 				return;
 			
 			// 결과 출력용
-			
+			/*
 			for (int i = 0; i < ROW; ++i)
 			{
 				for (int j = 0; j < COLUMN; ++j)
-				{
-					cout << (room[i][j] == EMPTY ? "\u25A1" : room[i][j] == GUNNER ? "\u2642" : "\u25A0");
+				{					
+					cout << (room[i][j] == EMPTY ? "□" : room[i][j] == GUNNER ? "♂" : "■");
 				}
 				cout << '\n';
 			}
 			cout << "현재 최대 총잡이수 : " << maxGunner << '\n';
-			
+			*/
 			return;
 		}
 	}
@@ -117,6 +133,7 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 
 int main()
 {
+	StopWatch timer;
 	int** room = new int* [ROW];
 	for (int i = 0; i < ROW; ++i)
 	{
@@ -125,7 +142,7 @@ int main()
 	}
 
 	// 주어진 조건 =====================================
-
+	
 	room[0][1] = WALL;	room[0][3] = WALL;	room[0][5] = WALL;	room[0][7] = WALL;
 	room[1][5] = WALL;
 	room[2][0] = WALL; room[2][2] = WALL; room[2][5] = WALL; room[2][7] = WALL;
@@ -133,23 +150,31 @@ int main()
 	room[5][5] = WALL; room[5][7] = WALL;
 	room[6][1] = WALL;
 	room[7][4] = WALL; room[7][6] = WALL;
-
+	
+	/*
+	room[0][0] = WALL;	room[0][1] = WALL;	room[0][2] = WALL;
+	room[2][1] = WALL;
+	room[3][0] = WALL; room[3][1] = WALL; room[3][2] = WALL;
+	*/
 	// 초기 모습 출력용 =====================================
 	for (int i = 0; i < ROW; ++i)
 	{
 		for (int j = 0; j < COLUMN; ++j)
 		{
-			cout << (room[i][j] == EMPTY ? "\u25A1" : room[i][j] == GUNNER ? "\u2642" : "\u25A0");
+			cout << (room[i][j] == EMPTY ? "□" : room[i][j] == GUNNER ? "♂" : "■");
 		}
 		cout << '\n';
 	}
 	cout << '\n';
 	// ===========================================
-
+	timer.start();
 	CountMaxGunner(room, 0, 0, maxGunner);
+	timer.stop();
 
 	cout << "최대 총잡이 수 : " << maxGunner << "명" << '\n'
 	<< "배치 가짓수 : " << maxGunnerCount << "가지" << '\n';
+
+	cout << '\n' << "소요된 시간 : " << (double)timer.getElapsedTime() << " ms" << '\n';
 
 	for (int i = 0; i < ROW; ++i)
 		delete[] room[i];
