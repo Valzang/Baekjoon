@@ -36,5 +36,8 @@
     <ClCompile Include="Weekdays\총잡이배치.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
+    <ClCompile Include="Weekdays\RLE.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

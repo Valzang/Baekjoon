@@ -39,8 +39,7 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 	if (col >= COLUMN)
 	{		
 		col = 0;
-		++row;
-		if (row >= ROW)
+		if (++row >= ROW)
 		{
 			if (_maxGunner > maxGunner)
 			{
@@ -68,8 +67,8 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 		}
 	}
 
-	bool k1Check = room[row][col] == WALL;
-	bool k2Check = room[row][col] == WALL;
+	bool wallCheck1 = room[row][col] == WALL;
+	bool wallCheck2 = room[row][col] == WALL;
 
 	bool canSet = true;
 
@@ -83,13 +82,13 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 		}
 		else if (room[k1][col] == GUNNER)
 		{
-			if (!k1Check)
+			if (!wallCheck1)
 			{
 				canSet = false;
 				break;
 			}
 			else
-				k1Check = false;
+				wallCheck1 = false;
 		}
 	}
 
@@ -105,13 +104,13 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 			}
 			else if (room[row][k2] == GUNNER)
 			{
-				if (!k2Check)
+				if (!wallCheck2)
 				{
 					canSet = false;
 					break;
 				}
 				else
-					k2Check = false;
+					wallCheck2 = false;
 			}
 		}
 	}
@@ -121,10 +120,8 @@ void CountMaxGunner(int **room, int row, int col, int _maxGunner)
 	{
 		room[row][col] = GUNNER;
 		CountMaxGunner(room, row, col + 1, _maxGunner + 1);
-	}
-	if(room[row][col] == GUNNER)
 		room[row][col] = EMPTY;
-
+	}
 	// 총잡이 배치 가능하더라도 배치 스킵
 	CountMaxGunner(room, row, col + 1, _maxGunner);
 
@@ -138,7 +135,7 @@ int main()
 	for (int i = 0; i < ROW; ++i)
 	{
 		room[i] = new int[COLUMN];
-		memset(room[i], EMPTY, sizeof(int) * ROW);
+		memset(room[i], EMPTY, sizeof(int) * COLUMN);
 	}
 
 	// 주어진 조건 =====================================
