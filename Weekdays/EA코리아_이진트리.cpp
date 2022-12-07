@@ -24,7 +24,7 @@ struct tree
 
 int DownTree(tree* T, map<int, int> subTreeMap)
 {
-	int count = subTreeMap.size();
+	int count = (int)subTreeMap.size();
 	map<int, int> leftMap = subTreeMap;
 	map<int, int> rightMap = subTreeMap;
 	if (T->l != nullptr)

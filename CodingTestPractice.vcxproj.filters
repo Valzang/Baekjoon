@@ -21,22 +21,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Level2_올바른괄호.cpp">
+    <ClCompile Include="Programmers\Level2_프린터.cpp">
       <Filter>Source Files\Programmers</Filter>
     </ClCompile>
-    <ClCompile Include="Level2_기능개발.cpp">
+    <ClCompile Include="Programmers\Level2_기능개발.cpp">
       <Filter>Source Files\Programmers</Filter>
     </ClCompile>
-    <ClCompile Include="Programmers\Level2_프린터%28미완%29.cpp">
+    <ClCompile Include="Programmers\Level2_올바른괄호.cpp">
       <Filter>Source Files\Programmers</Filter>
     </ClCompile>
     <ClCompile Include="Weekdays\EA코리아_이진트리.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Weekdays\총잡이배치.cpp">
+    <ClCompile Include="Weekdays\RLE.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Weekdays\RLE.cpp">
+    <ClCompile Include="Weekdays\총잡이배치.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
   </ItemGroup>
