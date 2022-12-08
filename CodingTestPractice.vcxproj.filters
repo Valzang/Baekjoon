@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Weekdays">
       <UniqueIdentifier>{3a58c5e1-7905-451e-bfcb-c63ebfc6ecbf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon">
+      <UniqueIdentifier>{5ac733e6-e568-4b6b-adb4-84c096e55cd5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_프린터.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="Weekdays\총잡이배치.cpp">
       <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Gold5_17070_파이프옮기기1.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
