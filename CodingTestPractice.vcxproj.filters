@@ -48,7 +48,7 @@
     <ClCompile Include="Weekdays\전차로GO.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Platinum5_0과1.cpp">
+    <ClCompile Include="Baekjoon\Platinum5_8111_0과1.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
   </ItemGroup>
