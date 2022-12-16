@@ -51,5 +51,8 @@
     <ClCompile Include="Baekjoon\Platinum5_8111_0과1.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
+    <ClCompile Include="조이시티_창구.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
