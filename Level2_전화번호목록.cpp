@@ -64,6 +64,8 @@ bool solution(vector<string> phone_book) {
     int matchCount = 0;
     sort(phone_book.begin(), phone_book.end(), compare);
 
+    // 해당 문자열 길이에서 최대로 갔다가 작아지는 순간 길이+1이 될 때까지 continue
+
     for (int i = 0; i < phone_book.size(); ++i)
     {
         for (int j = 0; j < phone_book.size(); ++j)

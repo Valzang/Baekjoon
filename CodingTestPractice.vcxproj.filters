@@ -60,5 +60,8 @@
     <ClCompile Include="질병통제예방센터.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
+    <ClCompile Include="조이시티_지그재그.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
