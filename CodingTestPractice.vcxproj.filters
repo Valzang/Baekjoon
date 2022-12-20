@@ -54,5 +54,11 @@
     <ClCompile Include="조이시티_창구.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
+    <ClCompile Include="Level2_전화번호목록.cpp">
+      <Filter>Source Files\Programmers</Filter>
+    </ClCompile>
+    <ClCompile Include="질병통제예방센터.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
