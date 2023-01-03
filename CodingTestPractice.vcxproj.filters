@@ -48,20 +48,23 @@
     <ClCompile Include="Weekdays\전차로GO.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Platinum5_8111_0과1.cpp">
+    <ClCompile Include="Baekjoon\Platinum5_8111_0과1%28못풀%29.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
     <ClCompile Include="조이시티_창구.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Level2_전화번호목록.cpp">
+    <ClCompile Include="Level2_전화번호목록%28못풀%29.cpp">
       <Filter>Source Files\Programmers</Filter>
     </ClCompile>
     <ClCompile Include="질병통제예방센터.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="조이시티_지그재그.cpp">
+    <ClCompile Include="조이시티_지그재그%28못풀%29.cpp">
       <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Gold5_2212_센서%28다시풀것%29.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
