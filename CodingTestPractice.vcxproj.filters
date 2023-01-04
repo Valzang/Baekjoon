@@ -66,5 +66,14 @@
     <ClCompile Include="Gold5_2212_센서%28다시풀것%29.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
+    <ClCompile Include="Gold5_13164_행복유치원.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Gold5_2293_동전1%28다시 풀것%29.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Gold5_2294_동전2.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
