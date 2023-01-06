@@ -84,5 +84,8 @@
     <ClCompile Include="Baekjoon\Silver1_1149_RGB거리.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Silver1_10844_쉬운계단수.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
