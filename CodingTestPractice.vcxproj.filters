@@ -87,5 +87,11 @@
     <ClCompile Include="Baekjoon\Silver1_10844_쉬운계단수.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
+    <ClCompile Include="Silver2_1965_상자넣기.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Silver1_2302_극장좌석.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
