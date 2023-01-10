@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold3_1520_내리막길%28다시풀것%29.cpp" />
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_13164_행복유치원.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
