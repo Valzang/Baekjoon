@@ -66,12 +66,6 @@
     <ClCompile Include="Baekjoon\Platinum5_8111_0과1(못풀).cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Silver1_2302_극장좌석.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\Silver2_1965_상자넣기.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2293_동전1(다시 풀것).cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
@@ -103,6 +97,15 @@
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_9461_파도반수열.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2225_합분해.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_2302_극장좌석.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_1965_상자넣기.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
   </ItemGroup>
