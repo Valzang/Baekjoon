@@ -114,5 +114,8 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1890_점프.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_11057_오르막수.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
