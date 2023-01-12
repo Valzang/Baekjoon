@@ -17,24 +17,38 @@
 */
 
 #include <iostream>
-#include <vector>
 
 using namespace std;
+
+int results[1001][10];
+int total[1001];
 
 int main()
 {
 	int N;
-	int divider = 10007;
-	
-	int** result;
+	int divider = 10007;	
+
+	for (int i = 0; i <= 9; ++i)
+	{
+		results[1][i] = 1;
+		total[1] += 1;
+		results[2][i] = 10 - i;
+		total[2] += results[2][i];
+	}
 
 	cin >> N;
-	result = new int* [N + 1];
-	for (int i = 0; i <= N; ++i)
-		result[i] = new int[10];
 
-	//results.resize(N+1);
+	for (int i = 3; i <= N; ++i)
+	{
+		results[i][0] = total[i - 1];
+		total[i] = total[i - 1];
+		for (int j = 1; j <= 9; ++j)
+		{
+			results[i][j] = (results[i][j-1] % divider - results[i - 1][j - 1] % divider + divider) % divider;
+			total[i] = (total[i] + results[i][j]) % divider;
+		}		
+	}
 
-
+	cout << total[N];
 	return 0;
 }
