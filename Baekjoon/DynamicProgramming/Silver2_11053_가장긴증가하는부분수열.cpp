@@ -24,7 +24,7 @@ int main()
 	int N;
 	int A[1001] = { 0, };
 	int results[1001] = { 0, };
-	int max = 0;
+	int max = 1;
 
 	cin >> N;
 
@@ -34,12 +34,13 @@ int main()
 	results[1] = 1;
 	for (int i = 2; i <= N; ++i)
 	{
-		int maxIndex = i - 1;
+		int maxIndex = i;
 		for (int j = i - 1; j >= 1; --j)
 		{
 			if (A[j] < A[i])
-				maxIndex = A[maxIndex] < A[j] ? j : maxIndex;
+				maxIndex = results[maxIndex] < results[j] ? j : maxIndex;
 		}
+
 		results[i] = results[maxIndex] + 1;
 		max = max < results[i] ? results[i] : max;
 	}
