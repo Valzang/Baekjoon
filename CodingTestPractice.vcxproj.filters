@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Baekjoon">
       <UniqueIdentifier>{5ac733e6-e568-4b6b-adb4-84c096e55cd5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon\DP">
+      <UniqueIdentifier>{e002bbc8-d48a-4965-9ed5-7e7cd00abcaa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_기능개발.cpp">
@@ -57,65 +60,71 @@
     <ClCompile Include="Weekdays\총잡이배치.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Gold5_2212_센서(다시풀것).cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
     <ClCompile Include="Baekjoon\Gold5_17070_파이프옮기기1.cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
     <ClCompile Include="Baekjoon\Platinum5_8111_0과1(못풀).cpp">
       <Filter>Source Files\Baekjoon</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2293_동전1(다시 풀것).cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2294_동전2(다시 풀것).cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_13164_행복유치원.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1149_RGB거리.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1309_동물원.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_9465_스티커.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_10844_쉬운계단수(다시 풀것).cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11048_이동하기.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_1463_1로만들기.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_2579_계단오르기.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_9461_파도반수열.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2225_합분해.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_2302_극장좌석.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_1965_상자넣기.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2212_센서(다시풀것).cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold3_1520_내리막길%28다시풀것%29.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_2133_타일채우기%28다시풀것%29.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2225_합분해.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2293_동전1(다시 풀것).cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2294_동전2(다시 풀것).cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_13164_행복유치원.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1149_RGB거리.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1309_동물원.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1890_점프.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_2302_극장좌석.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_9465_스티커.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_10844_쉬운계단수(다시 풀것).cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_11057_오르막수.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_1965_상자넣기.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11048_이동하기.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_1463_1로만들기.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_2579_계단오르기.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_9461_파도반수열.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11053_가장긴증가하는부분수열.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
