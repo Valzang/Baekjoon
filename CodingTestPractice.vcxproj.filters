@@ -126,5 +126,14 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11053_가장긴증가하는부분수열.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_11052_카드구매하기.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_1699_제곱수의합.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_20437_문자열게임2.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
