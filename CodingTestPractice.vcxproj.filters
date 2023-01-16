@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Baekjoon\DP">
       <UniqueIdentifier>{e002bbc8-d48a-4965-9ed5-7e7cd00abcaa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon\Graph">
+      <UniqueIdentifier>{323d382f-a723-4d2c-815b-6f37cf6f278e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_기능개발.cpp">
@@ -134,6 +137,9 @@
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_20437_문자열게임2.cpp">
       <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Graph\Gold4_4485_녹색옷입은애가젤다지.cpp">
+      <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
