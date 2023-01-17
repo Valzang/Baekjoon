@@ -32,87 +32,98 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <limits.h>
 
 using namespace std;
 
 int cave[125][125];
 int mid[125][125];
-bool check[125][125];
 
 struct Vector2
 {
 	int row = 0, col = 0, val = 0;
 	Vector2() { row = 0, col = 0, val = 0; }
 	Vector2(int r, int c, int v) { row = r, col = c, val = v; }
-	const Vector2 operator=(const Vector2 v)
+	const void operator=(const Vector2 v)
 	{
 		row = v.row;
 		col = v.col;
 		val = v.val;
 	}
-	const bool operator>(const Vector2 v)
+};
+
+struct cmp
+{
+	bool operator()(Vector2 v1, Vector2 v2)
 	{
-		return val > v.val;
+		return v1.val > v2.val;
 	}
 };
 
-priority_queue<Vector2> pq;
+priority_queue<Vector2, vector<Vector2>, cmp> pq;
+
+vector<int> results;
 
 void GetResult(int i, int j, int N)
 {	
-	if (check[i][j])
-		return;
-
 	Vector2 vec(i,j,mid[i][j]);
 	pq.push(vec);
-
-	check[i][j] = true;
 
 	do 
 	{
 		Vector2 curVec = pq.top();
 		pq.pop();
-		if (check[i][j])
-			continue;
 
-		check[i][j] = true;
+		int i = curVec.row;
+		int j = curVec.col;
 
-		if (curVec.row >= 1)
+		if (i >= 1)
 		{
-			int temp = mid[curVec.row - 1][curVec.col] > mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] 
-				? mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] : mid[curVec.row - 1][curVec.col];
-			curVec = Vector2(curVec.row - 1, j, temp);
-			pq.push(curVec);
+			int temp = mid[i][j] + cave[i-1][j];
+			if (mid[i - 1][j] > temp)
+			{
+				curVec = Vector2(i - 1, j, temp);
+				mid[i - 1][j] = temp;
+				pq.push(curVec);
+			}
 		}
-		if (curVec.row < N - 1)
+		if (i < N - 1)
 		{
-			int temp = mid[curVec.row + 1][curVec.col] > mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] 
-				? mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] : mid[curVec.row + 1][curVec.col];
-			curVec = Vector2(i + 1, j, temp);
-			pq.push(curVec);
+			int temp = mid[i][j] + cave[i+1][j];
+			if (mid[i + 1][j] > temp)
+			{
+				curVec = Vector2(i + 1, j, temp);
+				mid[i + 1][j] = temp;
+				pq.push(curVec);
+			}
 		}
 		if (j >= 1)
 		{
-			int temp = mid[curVec.row][curVec.col - 1] > mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] 
-				? mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] : mid[curVec.row][curVec.col - 1];
-			curVec = Vector2(i, j - 1, temp);
-			pq.push(curVec);
+			int temp = mid[i][j] + cave[i][j-1];
+			if (mid[i][j-1] > temp)
+			{
+				curVec = Vector2(i, j-1, temp);
+				mid[i][j - 1] = temp;
+				pq.push(curVec);
+			}
 		}
 		if (j < N - 1)
 		{
-			int temp = mid[curVec.row][curVec.col + 1] > mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] 
-				? mid[curVec.row][curVec.col] + cave[curVec.row][curVec.col] : mid[curVec.row][curVec.col + 1];
-			curVec = Vector2(i, j + 1, temp);
-			pq.push(curVec);
+			int temp = mid[i][j] + cave[i][j+1];
+			if (mid[i][j + 1] > temp)
+			{
+				curVec = Vector2(i, j + 1, temp);
+				mid[i][j + 1] = temp;
+				pq.push(curVec);
+			}
 		}
 	} while (!pq.empty());
+
+	results.push_back(mid[N - 1][N - 1]);
 }
 
 int main()
 {
 	int N;
-	vector<int> results;
 	cin >> N;
 
 	while (N != 0)
@@ -122,16 +133,16 @@ int main()
 			for (int j = 0; j < N; ++j)
 			{
 				cin >> cave[i][j];
-				mid[i][j] = INT_MAX;				
+				mid[i][j] = 20000;				
 			}
 		}		
 		mid[0][0] = cave[0][0];
 		GetResult(0, 0, N);
-		results.push_back(mid[N - 1][N - 1]);
 
 		cin >> N;
 	}
 
-
+	for (int i = 0; i < results.size(); ++i)
+		cout << "Problem " << i+1 << ": " << results[i] << '\n';
 	return 0;
 }

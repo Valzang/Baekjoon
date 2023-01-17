@@ -141,5 +141,8 @@
     <ClCompile Include="Baekjoon\Graph\Gold4_4485_녹색옷입은애가젤다지.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Graph\Silver2_1260_DFS와BFS.cpp">
+      <Filter>Source Files\Baekjoon\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
