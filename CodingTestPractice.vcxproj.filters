@@ -144,5 +144,8 @@
     <ClCompile Include="Baekjoon\Graph\Silver2_1260_DFS와BFS.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="Silver1_1911_흙길보수하기.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
