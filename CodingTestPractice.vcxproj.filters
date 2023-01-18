@@ -31,6 +31,9 @@
     <Filter Include="Source Files\Baekjoon\Sort">
       <UniqueIdentifier>{3da48aa2-1c98-4a7e-9b28-eaf3e870977d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon\Permutation">
+      <UniqueIdentifier>{8f6763d1-e3e1-4e9f-ab84-b2385f9ee46d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_기능개발.cpp">
@@ -152,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="Baekjoon\Graph\Gold5_2668_숫자고르기.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Permutation\Silver2_10971_외판원순회2.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
