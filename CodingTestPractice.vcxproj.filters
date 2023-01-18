@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Baekjoon\Graph">
       <UniqueIdentifier>{323d382f-a723-4d2c-815b-6f37cf6f278e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon\Sort">
+      <UniqueIdentifier>{3da48aa2-1c98-4a7e-9b28-eaf3e870977d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_기능개발.cpp">
@@ -141,11 +144,14 @@
     <ClCompile Include="Baekjoon\Graph\Gold4_4485_녹색옷입은애가젤다지.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Graph\Silver2_1260_DFS와BFS.cpp">
+    <ClCompile Include="Baekjoon\Graph\Silver2_1260_DFS와BFS%28못풀%29.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="Silver1_1911_흙길보수하기.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
+    <ClCompile Include="Baekjoon\Sort\Silver1_1911_흙길보수하기.cpp">
+      <Filter>Source Files\Baekjoon\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Graph\Gold5_2668_숫자고르기.cpp">
+      <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

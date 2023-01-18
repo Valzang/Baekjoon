@@ -22,23 +22,55 @@
 
 ÈùÆ®
 	111222..333444555.... // ±æÀÌ 3ÀÎ ³ÎºşÁö
+	.111222.333444555.... // ±æÀÌ 3ÀÎ ³ÎºşÁö
 	.MMMMM..MMMM.MMMM.... // ¿õµ¢ÀÌ
 	012345678901234567890 // ÁÂÇ¥
 
 */
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
+
+bool compare(pair<int,int> a, pair<int,int> b)
+{
+	return a.first < b.first;
+}
+
 
 int main()
 {
 	int N, L;
+	int result = 0;
+	int count = 0;
+	vector<pair<int, int>> puddles;
 
 	cin >> N >> L;
+	puddles.resize(N);
 
-	for (int i = 0; i< N; ++i)
+	for (int i = 0; i < N; ++i)
+	{
+		cin >> puddles[i].first >> puddles[i].second;
+		--puddles[i].second;
+	}
 
+	sort(puddles.begin(), puddles.end(), compare);
+
+	
+	for (int i = puddles[0].first; i <= puddles.back().second;)
+	{
+		if (i >= puddles[count].first && i <= puddles[count].second)
+		{
+			++result;
+			i += L;
+		}
+		else
+			i = i > puddles[++count].first ? i : puddles[count].first;
+	}
+
+	cout << result;
 
 	return 0;
 }
