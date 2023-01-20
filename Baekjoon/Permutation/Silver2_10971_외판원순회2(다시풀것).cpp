@@ -34,13 +34,56 @@
 
 */
 
+
 #include <iostream>
 
 using namespace std;
 
+int W[11][11];
+int result = 10000000;
+int N;
+
+bool check[10];
+
+void FindMinWay(int start, int idx, int count, int sum)
+{		
+	if (count == N)
+	{
+		if (W[idx][start] == 0) 
+			return;
+		if (result > sum + W[idx][start])
+			result = sum + W[idx][start];
+		return;
+	}
+	for (int i = 0; i < N; ++i)
+	{
+		if (check[i] || W[idx][i] == 0) 
+			continue;
+		check[i] = true;
+		FindMinWay(start, i, count + 1, sum + W[idx][i]);
+		check[i] = false;
+
+	}
+}
+
 int main()
 {
+	cin >> N;
 
+	for (int i = 0; i < N; ++i)
+	{
+		for (int j = 0; j < N; ++j)
+			cin >> W[i][j];
+	}
+
+	for (int i = 0; i < N; ++i)
+	{
+		check[i] = true;
+		FindMinWay(i, i, 1, 0);
+		check[i] = false;
+	}
+
+	cout << result;
 
 	return 0;
 }

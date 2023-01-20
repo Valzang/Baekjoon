@@ -156,7 +156,10 @@
     <ClCompile Include="Baekjoon\Graph\Gold5_2668_숫자고르기.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Permutation\Silver2_10971_외판원순회2.cpp">
+    <ClCompile Include="Baekjoon\Permutation\Silver2_10971_외판원순회2%28다시풀것%29.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Permutation\Silver1_1931_회의실배정.cpp">
       <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
   </ItemGroup>
