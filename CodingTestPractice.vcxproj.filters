@@ -162,5 +162,11 @@
     <ClCompile Include="Baekjoon\Permutation\Silver1_1931_회의실배정.cpp">
       <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Permutation\Gold4_1339_단어수학%28다시풀것%29.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
+    </ClCompile>
+    <ClCompile Include="Silver1_14888_연산자끼워넣기.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
