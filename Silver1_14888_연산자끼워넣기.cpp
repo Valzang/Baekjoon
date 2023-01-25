@@ -48,6 +48,30 @@
 
 using namespace std;
 
+int Operate(int idx, int A, int B)
+{
+	switch (idx)
+	{
+		case 0:
+			return A + B;
+		case 1:
+			return A - B;
+		case 2:
+			return A * B;
+		case 3:
+			return A / B;
+	}
+}
+
+int maxResult = 0;
+int minResult = 1000000000;
+
+void DFS(vector<int> operandVec, vector<int> operatorVec)
+{
+
+}
+
+// 1,000,000,000
 int main()
 {
 	int N;

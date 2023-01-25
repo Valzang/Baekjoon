@@ -168,5 +168,8 @@
     <ClCompile Include="Silver1_14888_연산자끼워넣기.cpp">
       <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_17404_RGB거리2.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
