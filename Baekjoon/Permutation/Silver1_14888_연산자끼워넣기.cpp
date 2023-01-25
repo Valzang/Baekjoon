@@ -48,6 +48,11 @@
 
 using namespace std;
 
+int N;
+vector<int> operandVec;
+int maxResult = -1000000000;
+int minResult = 1000000000;
+
 int Operate(int idx, int A, int B)
 {
 	switch (idx)
@@ -63,30 +68,46 @@ int Operate(int idx, int A, int B)
 	}
 }
 
-int maxResult = 0;
-int minResult = 1000000000;
-
-void DFS(vector<int> operandVec, vector<int> operatorVec)
+void DFS(vector<int> operatorVec, int value, int count = 0)
 {
+	if (count + 1 >= (int)operandVec.size())
+	{
+		if (value < minResult)
+			minResult = value;
+		if (value > maxResult)
+			maxResult = value;
+		return;
+	}
 
+	for (int i = 0; i < (int)operatorVec.size(); ++i)
+	{
+		if (operatorVec[i] == 0)
+			continue;
+
+		--operatorVec[i];
+		DFS(operatorVec, Operate(i, value, operandVec[count + 1]), count + 1);
+		++operatorVec[i];
+
+	}
 }
 
-// 1,000,000,000
 int main()
 {
-	int N;
-	vector<int> A;
 	vector<int> operatorVec;
 	operatorVec.resize(4);
 
 	cin >> N;
 
-	A.resize(N);
+	operandVec.resize(N);
 	for (int i = 0; i < N; ++i)
-		cin >> A[i];
+		cin >> operandVec[i];
 
 	for (int i = 0; i < 4; ++i)
 		cin >> operatorVec[i];
+
+	DFS(operatorVec, operandVec[0]);
+
+	cout << maxResult << '\n' << minResult;
 
 	return 0;
 }

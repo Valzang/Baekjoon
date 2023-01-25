@@ -69,12 +69,6 @@
     <ClCompile Include="Weekdays\총잡이배치.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Gold5_17070_파이프옮기기1.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
-    <ClCompile Include="Baekjoon\Platinum5_8111_0과1(못풀).cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_2212_센서(다시풀것).cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
@@ -165,11 +159,20 @@
     <ClCompile Include="Baekjoon\Permutation\Gold4_1339_단어수학%28다시풀것%29.cpp">
       <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
-    <ClCompile Include="Silver1_14888_연산자끼워넣기.cpp">
-      <Filter>Source Files\Baekjoon\Permutation</Filter>
-    </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_17404_RGB거리2.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Permutation\Silver1_14888_연산자끼워넣기.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_17070_파이프옮기기1.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Graph\Platinum5_8111_0과1(못풀).cpp">
+      <Filter>Source Files\Baekjoon\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Permutation\Silver2_14889_스타트와링크.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
