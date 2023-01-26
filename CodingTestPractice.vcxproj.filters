@@ -135,9 +135,6 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_1699_제곱수의합.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
-    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_20437_문자열게임2.cpp">
-      <Filter>Source Files\Baekjoon</Filter>
-    </ClCompile>
     <ClCompile Include="Baekjoon\Graph\Gold4_4485_녹색옷입은애가젤다지.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
@@ -173,6 +170,12 @@
     </ClCompile>
     <ClCompile Include="Baekjoon\Permutation\Silver2_14889_스타트와링크.cpp">
       <Filter>Source Files\Baekjoon\Permutation</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Permutation\Silver1_15661_링크와스타트.cpp">
+      <Filter>Source Files\Baekjoon\Permutation</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_20437_문자열게임2.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
