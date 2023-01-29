@@ -34,6 +34,9 @@
     <Filter Include="Source Files\Baekjoon\Permutation">
       <UniqueIdentifier>{8f6763d1-e3e1-4e9f-ab84-b2385f9ee46d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon\Simulation">
+      <UniqueIdentifier>{e52b7a85-19ec-4716-8201-52fe4cb89380}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_기능개발.cpp">
@@ -175,6 +178,15 @@
       <Filter>Source Files\Baekjoon\Permutation</Filter>
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_20437_문자열게임2.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Gold3_14391_종이조각%28안풀%29.cpp">
+      <Filter>Source Files\Baekjoon</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Simulation\Silver2_16931_겉넓이구하기.cpp">
+      <Filter>Source Files\Baekjoon\Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_16194_카드구매하기2.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
   </ItemGroup>
