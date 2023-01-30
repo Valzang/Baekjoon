@@ -189,5 +189,11 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_16194_카드구매하기2.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_15990_123더하기5.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_14002_가장긴증가하는부분수열4.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
