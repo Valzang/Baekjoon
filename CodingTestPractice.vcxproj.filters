@@ -195,5 +195,8 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_14002_가장긴증가하는부분수열4.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Graph\Gold4_1261_알고스팟.cpp">
+      <Filter>Source Files\Baekjoon\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
