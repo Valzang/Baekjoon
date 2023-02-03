@@ -198,5 +198,11 @@
     <ClCompile Include="Baekjoon\Graph\Gold4_1261_알고스팟.cpp">
       <Filter>Source Files\Baekjoon\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Graph\Gold4_14226_이모티콘%28안풀%29.cpp">
+      <Filter>Source Files\Baekjoon\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekdays\중앙값큐만들기.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
