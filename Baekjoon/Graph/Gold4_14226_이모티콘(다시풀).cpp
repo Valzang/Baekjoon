@@ -35,26 +35,53 @@
 using namespace std;
 
 int S;
-int emojiCount = 1;
-int totalTime = 10000;
 
 vector<int> minTime;
-queue<int> curCount;
+bool visited[2000][2000];
 
-void BFS(int emojiCount, int clipboard, int time)
+int BFS()
 {
+	queue<pair<int, pair<int, int>>> Q;
+	visited[1][0] = true;
+	Q.push(make_pair(1, make_pair(0, 0)));
+
+	while (!Q.empty())
+	{
+		int emojiCount = Q.front().first;
+		int clipboard = Q.front().second.first;
+		int time = Q.front().second.second;
+		Q.pop();
+
+		if (emojiCount == S)
+			return time;
+
+		if (emojiCount > 0 && emojiCount < 2000)
+		{
+			if (!visited[emojiCount][emojiCount])
+			{
+				visited[emojiCount][emojiCount] = true;
+				Q.push(make_pair(emojiCount, make_pair(emojiCount, time + 1)));
+			}
+			if (emojiCount + clipboard < 2000 && !visited[emojiCount + clipboard][clipboard])
+			{
+				visited[emojiCount + clipboard][clipboard] = true;
+				Q.push(make_pair(emojiCount + clipboard, make_pair(clipboard, time + 1)));
+			}
+		}
+		
+		if (emojiCount > 1 && !visited[emojiCount - 1][clipboard])
+		{
+			visited[emojiCount - 1][clipboard] = true;
+			Q.push(make_pair(emojiCount - 1, make_pair(clipboard, time + 1)));
+		}
+	}
 }
 
 int main()
 {
 	cin >> S;
-	minTime.resize(S + 1);
-	for (int i = 1; i <= S; ++i)
-		minTime[i] = i;
 
-	BFS(1, 0, 0);
-
-	cout << minTime[S];
+	cout << BFS();
 
 	return 0;
 }

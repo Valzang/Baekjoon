@@ -28,14 +28,42 @@
 */
 
 #include <iostream>
-#include <vector>
+#include <queue>
+#include <string>
 
 using namespace std;
+int piece[5][5];
 
-void main()
+int N, M;
+int result = 0;
+queue<pair<int, string>> Q;
+vector<int> process;
+
+enum DIRECTION { START, RIGHT, DOWN };
+
+void BFS(int direction = 0, int startIdx = 1)
 {
+	for (int i = startIdx; i <= N; ++i)
+	{
+		for (int j = i; j <= M; ++j)
+		{
 
+		}
+	}
 
+}
 
+int main()
+{
+	bool check[5][5] = { 0, };
+	cin >> N >> M;
+	for (int i = 1; i <= N; ++i)
+	{
+		string temp;
+		cin >> temp;
+		for (int j = 1; j <= M; ++j)
+			piece[i][j] = temp[j-1] - '0';
+	}
 	
+	return 0;
 }
