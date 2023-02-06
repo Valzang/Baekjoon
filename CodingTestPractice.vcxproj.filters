@@ -204,5 +204,14 @@
     <ClCompile Include="Weekdays\중앙값큐만들기.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
+    <ClCompile Include="Weekdays\우주탐사.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekdays\ChipTest.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_2156_포도주시식.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
