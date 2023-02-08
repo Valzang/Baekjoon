@@ -216,5 +216,14 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_1912_연속합.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Weekdays\기출_알고리즘1.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekdays\기출_알고리즘2.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_2193_이친수.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
