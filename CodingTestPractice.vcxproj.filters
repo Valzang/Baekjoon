@@ -225,5 +225,11 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_2193_이친수.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_11726_2xn타일링.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_11727_2xn타일링2.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
