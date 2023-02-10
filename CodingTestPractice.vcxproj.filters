@@ -37,6 +37,9 @@
     <Filter Include="Source Files\Baekjoon\Simulation">
       <UniqueIdentifier>{e52b7a85-19ec-4716-8201-52fe4cb89380}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Baekjoon\Math">
+      <UniqueIdentifier>{26c95f55-0645-43dc-ab52-2ab2a3fcbe1c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Programmers\Level2_기능개발.cpp">
@@ -239,6 +242,9 @@
     </ClCompile>
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11055_가장큰증가부분수열.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Math\Silver1_6588_골드바흐의추측.cpp">
+      <Filter>Source Files\Baekjoon\Math</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
