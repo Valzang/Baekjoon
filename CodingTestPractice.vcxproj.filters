@@ -231,5 +231,14 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver3_11727_2xn타일링2.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Weekdays\TwoDots.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_15988_123더하기3.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11055_가장큰증가부분수열.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
