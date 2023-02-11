@@ -246,5 +246,8 @@
     <ClCompile Include="Baekjoon\Math\Silver1_6588_골드바흐의추측.cpp">
       <Filter>Source Files\Baekjoon\Math</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1932_정수삼각형.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
