@@ -249,5 +249,11 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Silver1_1932_정수삼각형.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold5_13398_연속합2%28다시 풀것%29.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Weekdays\XLTest.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
