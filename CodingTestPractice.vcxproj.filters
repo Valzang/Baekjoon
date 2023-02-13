@@ -255,5 +255,8 @@
     <ClCompile Include="Weekdays\XLTest.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
+    <ClCompile Include="Weekdays\지옥불삼각지대%28포기%29.cpp">
+      <Filter>Source Files\Weekdays</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
