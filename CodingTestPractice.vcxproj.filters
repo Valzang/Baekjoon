@@ -258,5 +258,11 @@
     <ClCompile Include="Weekdays\지옥불삼각지대%28포기%29.cpp">
       <Filter>Source Files\Weekdays</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Silver2_11722_가장긴감소하는부분수열.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_11054_가장긴바이토닉부분수열.cpp">
+      <Filter>Source Files\Baekjoon\DP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
