@@ -264,5 +264,14 @@
     <ClCompile Include="Baekjoon\DynamicProgramming\Gold4_11054_가장긴바이토닉부분수열.cpp">
       <Filter>Source Files\Baekjoon\DP</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Math\Silver2_2004_조합0의개수.cpp">
+      <Filter>Source Files\Baekjoon\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Math\Silver5_1676_팩토리얼0의개수%28다시 풀것%29.cpp">
+      <Filter>Source Files\Baekjoon\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Math\Silver2_17087_숨바꼭질6.cpp">
+      <Filter>Source Files\Baekjoon\Math</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
